@@ -468,3 +468,37 @@ tr:hover {
     resize: vertical;
     min-height: 100px;
 }
+
+/* Post Editor / Naver Cafe Style */
+.post-editor-body input:focus,
+.post-editor-body textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.post-editor-body textarea {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.post-content img {
+    margin: 1.5rem 0;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#postContent:empty:before {
+    content: attr(data-placeholder);
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    pointer-events: none;
+}
+
+.table-container tr {
+    transition: background-color 0.2s;
+}
+
+.table-container tr:hover {
+    background-color: var(--bg-gray);
+}
